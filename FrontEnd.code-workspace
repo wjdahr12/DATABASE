@@ -1,0 +1,13 @@
+{
+  "folders": [
+    {
+      "path": "../../../../wjdahr12/FrontEnd"
+    },
+    {
+      "path": "../../../../wjdahr12/FrontEnd/starbucks"
+    }
+  ],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "FrontEnd"
+  }
+}
