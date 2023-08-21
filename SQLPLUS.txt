@@ -785,7 +785,7 @@
             NAME   VARCHAR2(10),
             GENDER   CHAR(1),
             ADDR   VARCHAR2(20),
-            CONSTRAINT PK_ID PRIMARY KEY(ID,NAME)
+            CONSTRAINT PK_ID PRIMARY KEY(ID, NAME)
             ID와 NAME을 같이 묶어서 주키로 설정가능
             위와 같은 형태가 가장 이상적인 형태;
         );
