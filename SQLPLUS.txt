@@ -1282,13 +1282,42 @@
 
     (2) 정규화
         1) 제1정규화: 속성값은 반드시 원자값, 하나의 원자값을 취해야 함
+            - Atomic columns
 
-        2) 제2정규화
+        2) 제2정규화: no partial dependencies
                 - 기본키가 복합키일 때, 복합키의 일부분이 다른 속성의 결정자인지 여부 판단
                 - 모든 키가 아닌 컬럼은 기본키 전체에 의존적이어야 함
+                - 중복 발생x
+                - 부분 종속성을 제거
 
-        3) 제3정규화
+        3) 제3정규화: No transitive dependencies; 이행적 종속성
                 - 키가 아닌 컬럼은 다른키가 아닌 컬럼에 의존적이어서는 안됨
 
     * erwin: 데이터 모델링 도구
         erwin으로 설치경로 바꾸기 -> allFusion ERwin Data Modeler r7 선택 -> 3개월 임시 라이센스.txt 키 복사 후 붙여넣기 -> 실행
+
+    3) 모델링 통합 설명
+        * mapping table
+            - 다대다 관계를 처리할 때 둘간의 관계를 연결해주는 테이블
+                white -> 연결테이블
+                author_id        topic_id
+                1                   1
+                1                   2
+                1                   3
+                2                   1
+                2                   3
+                두가지를 Primary Key이자 Foreign Key로 만들기
+
+    (3) Case(Modeling) Tool
+        - ER-WIN
+        - EX-ERD
+        - STAR UML
+        - Sqldeveloper Modeling
+        - 등등
+
+    (4) 학원 스크립트, 비디오 대여점 스크립트 중 택1
+        - ERD 작성(가급적 개념적 ERD도 작성해본다)
+        - DB에 작성
+        - 각 테이블에 데이터를 최소 20개 이상 입력
+        - 검색 시나리오를 10개 이상 준비
+        
